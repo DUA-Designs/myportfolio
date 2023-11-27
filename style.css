@@ -22,7 +22,7 @@ nav *{
      }
 }
 #about{
-    background: linear-gradient(90deg,rgba(75,0,0,0.75) ,rgba(50,24,0,0.5)  ),url(./images/IMG20230618125208s.jpg);
+    background: linear-gradient(90deg,rgba(75,0,0,0.75) ,rgba(50,24,0,0.5)  ),url(./images/IMG20230618125208.jpg);
     background-position: top;
     background-size: cover;
     color:white;
