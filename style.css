@@ -1,0 +1,182 @@
+ *{
+    font-family: 'Nunito', sans-serif;
+    transition:all 0.3s linear ;
+ }
+nav{
+    background-color: #be3144;
+    
+}
+nav *{
+    color: white !important;
+    text-align: center;
+}
+ #link:hover{
+ background-color: black;
+ border-radius: 5%;
+
+ }
+@media (min-width:900px){
+    #list-container{
+       
+        margin-left: 65%;
+     }
+}
+#about{
+    background: linear-gradient(90deg,rgba(75,0,0,0.75) ,rgba(50,24,0,0.5)  ),url(./images/IMG20230618125208.jpg);
+    background-position: top;
+    background-size: cover;
+    color:white;
+}
+#textChange::before{
+    content: "Responsive Websites";
+    animation: dynamicText 6s   infinite  ;
+    color: cyan;
+
+}
+@keyframes dynamicText{
+     25%{
+        content: "Attractive Landing Pages";
+     }
+     50%{
+        content: "Interactive Web Applications";
+     }
+     75%{
+        content:"Well Documented Websites";
+     }
+     
+}
+#projects{
+    text-align: center;
+    background-color: rgb(207, 205, 205);
+  
+    color: black;
+}
+ 
+#box a{
+    display: block;
+    text-decoration: none;
+    color: black;
+  
+
+    
+
+}
+#box p{
+    padding:5px;
+}
+#box #tech a{
+    color: white;
+}
+#box #tech{
+ 
+word-break: break-all;
+background-color: #bf051e;
+
+
+
+ 
+width: 70%;
+height: 20%;
+    font-size: 15px;
+    display: none;
+    transition: 0.4s linear;
+    z-index: 2;
+    top: 20%;
+    left: 15%;
+
+}
+#box:hover #tech{
+    display: block;
+ 
+}
+ 
+#box:hover img{
+    transition: 0.2s linear;
+    
+     
+        filter: brightness(25%);
+   
+}
+#certifications{
+    background-color: rgb(207, 205, 205);
+  
+    color: white;
+    text-align: center;
+}
+ #Icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: grid;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+#product{
+    color:white;
+}
+#prod{
+    text-align: center;
+    
+ 
+}
+#line{
+    border-bottom: 3px solid red;;
+}
+#git{
+    display: none;
+}
+#footLinks{
+    color:white;
+}
+
+#footLinks i{
+    font-size:1rem;
+    width: 30px;
+    height: 30px;
+color:white;
+display: grid;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+background-color: #212529;
+
+
+}
+#footLinks i:hover{
+    background-color : #b02a37;
+}
+#footLinks a{
+    text-decoration: none;
+}
+#btn-back-to-top {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ display: none;
+}
+
+
+@media (max-width:700px){
+    #aboutMe{
+        text-align: center;
+  
+    }
+    #academy{
+        font-size: 12px;
+        text-align: center;
+    }
+    #academy p{
+        margin: 0 auto;
+    }
+    #footLinks i{
+        font-size: 0.8rem;
+        width: 25px;
+    height: 25px;
+    }
+}
+
+ 
