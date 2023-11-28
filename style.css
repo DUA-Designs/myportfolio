@@ -15,7 +15,7 @@ nav *{
  border-radius: 5%;
 
  }
-@media (min-width:900px){
+@media (min-width:1000px){
     #list-container{
        
         margin-left: 65%;
@@ -176,6 +176,19 @@ background-color: #212529;
         font-size: 0.8rem;
         width: 25px;
     height: 25px;
+    }
+    #btn-back-to-top{
+        bottom: 5px;
+        right:5px;
+        
+
+
+    }
+    #btn-back-to-top i{
+        font-size: 1rem;
+    }
+    #Submitme{
+        width: 50% !important;
     }
 }
 
