@@ -69,15 +69,16 @@ nav *{
 }
 #box #tech{
  
-word-break: break-all;
-background-color: #bf051e;
+word-break: keep-all;
+ 
 
 
 
  
 width: 70%;
 height: 20%;
-    font-size: 15px;
+    font-size: 25px;
+    font-weight: 700;
     display: none;
     transition: 0.4s linear;
     z-index: 2;
@@ -102,6 +103,9 @@ height: 20%;
   
     color: white;
     text-align: center;
+}
+.carousel-inner img{
+    width: 85%;
 }
  #Icon{
     width: 50px;
@@ -189,6 +193,15 @@ background-color: #212529;
     }
     #Submitme{
         width: 50% !important;
+    }
+    #projects h1{
+        font-size: 15px;
+    }
+    #certifications h1{
+        font-size: 15px;
+    }
+    .carousel-inner img{
+        width: 95%;
     }
 }
 
