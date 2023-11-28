@@ -192,7 +192,8 @@ background-color: #212529;
         font-size: 1rem;
     }
     #Submitme{
-        width: 50% !important;
+        width: 70% !important;
+        font-size:12px ;
     }
     #projects h1{
         font-size: 15px;
