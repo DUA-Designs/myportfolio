@@ -34,28 +34,39 @@ function backToTop() {
 
  
 const url =  "https://api.adviceslip.com/advice";
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '6fbfebbdc6msh5f6f5ee3beae5d2p1fc4d9jsn61a0a7629cf5',
-		'X-RapidAPI-Host': 'shakespeare1.p.rapidapi.com'
-	}
-};
-
- 
  
 
-try {
-	const response = fetch(url );
-	 response.then((result)=> result.json()).then((data)=>{
-    console.log(data);
-     document.getElementById("quote").innerHTML=data.slip.advice;
-   document.getElementById("author").innerHTML=`Advice- #${data.slip.id}`});
-} catch (error) {
-	console.error(error);
+ function quoteGenerator(){
+
+  try {
+    const response = fetch(url );
+     response.then((result)=> result.json()).then((data)=>{
+      console.log(data);
+    localStorage.setItem("quote",data.slip.advice);
+       document.getElementById("quote").innerHTML=data.slip.advice;
+     document.getElementById("author").innerHTML=`Advice- #${data.slip.id}`
+    
+    });
+  } catch (error) {
+    console.error(error);
+  }
+ }
+let quote=localStorage.getItem("quote");
+if(quote){ 
+  document.getElementById("quote").innerHTML=quote;
+}
+else{
+  quoteGenerator();
+
 }
 
- /*
-  document.getElementById("quote").innerHTML=data[0].text;
-  document.getElementById("author").innerHTML=`Author- ${data[0].author}`
- });  */
+let date=new Date();
+if(date.getHours()===23 && date.getSeconds()===10 && date.getMinutes()===59){
+  quoteGenerator();
+
+
+
+
+}
+
+
