@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
    $("#touchbtn").click(function(){
 
@@ -33,18 +35,19 @@ function backToTop() {
 }
 
  
-const url =  "https://api.adviceslip.com/advice";
+ 
  
 
  function quoteGenerator(){
 
   try {
-    const response = fetch(url );
+    const response = fetch("https://dummyjson.com/quotes/random" );
      response.then((result)=> result.json()).then((data)=>{
       console.log(data);
-    localStorage.setItem("quote",data.slip.advice);
-       document.getElementById("quote").innerHTML=data.slip.advice;
-     document.getElementById("author").innerHTML=`Advice- #${data.slip.id}`
+    localStorage.setItem("quote",data.quote);
+    localStorage.setItem("author",data.author);
+       document.getElementById("quote").innerHTML=data.quote;
+     document.getElementById("author").innerHTML=`Author-  ${data.author}`;
     
     });
   } catch (error) {
@@ -52,13 +55,17 @@ const url =  "https://api.adviceslip.com/advice";
   }
  }
 let quote=localStorage.getItem("quote");
+let author=localStorage.getItem("author");
 if(quote){ 
   document.getElementById("quote").innerHTML=quote;
+  document.getElementById("author").innerHTML=`Author-  ${author}`;
 }
 else{
   quoteGenerator();
 
 }
+quoteGenerator();
+ 
 
 let date=new Date();
 if(date.getHours()===23 && date.getSeconds()===10 && date.getMinutes()===59){
@@ -68,5 +75,8 @@ if(date.getHours()===23 && date.getSeconds()===10 && date.getMinutes()===59){
 
 
 }
+
+ 
+ 
 
 
