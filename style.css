@@ -10,11 +10,12 @@
     width: 0.8rem;
 }
  html::-webkit-scrollbar-thumb {
-    background: gray;
-    border-radius: 5rem;
+    background: rgb(222, 154, 66);
+    border-radius: 20%;
 }
 html::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px 1px grey;
+   
+    box-shadow: inset 0 0 5px 1px rgb(91, 90, 90);
     background: transparent;
 }
 nav{
@@ -30,10 +31,13 @@ nav *{
     border-radius: 5%;
 }
  #link:hover{
-    background-color: burlywood;
+    background-color: rgb(222, 154, 66);
  
  
 
+ }
+ #quoteContainer{
+    transition: all 0.3s linear;
  }
 @media (min-width:1000px){
     #list-container{
@@ -41,8 +45,10 @@ nav *{
         margin-left: 65%;
      }
 }
+ 
+
 #about{
-    background:  linear-gradient(90deg,rgba(0, 0, 0, 0.65) ,rgba(0, 0, 0, 0.6)  ),url(./images/IMG20230618125208.jpg);  
+    background:  linear-gradient(  to bottom, rgba(25, 45, 55, 0.5) , rgba(25,50,45,0.4)  ),url(./images/IMG20230618125208.jpg);  
     background-position: top;
     background-size: cover;
     color:white;
@@ -50,7 +56,7 @@ nav *{
 #textChange::before{
     content: "Responsive Websites";
     animation: dynamicText 6s   infinite  ;
-    color: burlywood;
+    color: rgb(222, 154, 66);
 
 }
 @keyframes dynamicText{
@@ -149,15 +155,20 @@ height: 20%;
  
 }
 #line{
-    border-bottom: 3px solid red;;
+    border-bottom: 3px solid  rgb(222, 154, 66);
 }
 #git{
     display: none;
 }
+#touchbtn{
+    background-color:rgb(222, 154, 66) ;
+}
 #footLinks{
     color:white;
 }
-
+#designBy{
+    border-bottom: 1px solid rgb(222, 154, 66);
+}
 #footLinks i{
     font-size:1rem;
     width: 30px;
@@ -173,12 +184,13 @@ background-color: #212529;
 
 }
 #footLinks i:hover{
-    background-color : #b02a37;
+    background-color :  rgb(222, 154, 66);
 }
 #footLinks a{
     text-decoration: none;
 }
 #btn-back-to-top {
+    background-color: rgb(222, 154, 66);
  position: fixed;
  bottom: 20px;
  right: 20px;
