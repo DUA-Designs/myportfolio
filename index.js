@@ -64,7 +64,7 @@ else{
   quoteGenerator();
 
 }
-quoteGenerator();
+ 
  
 
 let date=new Date();
