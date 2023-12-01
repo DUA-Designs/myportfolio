@@ -39,6 +39,9 @@ nav *{
  #quoteContainer{
     transition: all 0.3s linear;
  }
+ #author{
+    font-size: 14px;
+ }
 @media (min-width:1000px){
     #list-container{
        
@@ -246,6 +249,9 @@ background-color: #212529;
         height: 30px;
         font-size: 0.8rem;
     }
+    #author{
+        font-size: 10px;
+     }
 }
 
  
