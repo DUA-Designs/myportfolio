@@ -64,6 +64,7 @@ else{
   quoteGenerator();
 
 }
+quoteGenerator();
  
  
 
